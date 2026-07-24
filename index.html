@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="hi" id="htmlRoot">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">पंडित आर.के. शर्मा ज्योतिष केंद्र | सिरसा, हरियाणा</title>
+<meta name="description" id="metaDesc" content="पंडित आर.के. शर्मा - 20+ वर्षों का अनुभव। कुंडली, वास्तु, अंक ज्योतिष, हस्तरेखा, वैवाहिक समस्या, वशीकरण एवं समस्त ज्योतिष सेवाएं। सिरसा, हरियाणा - खाटू श्याम मंदिर के पास।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span data-i18n="topbar.blessing">🕉️ ॐ नमः शिवाय</span>
+    <div class="topbar-right">
+      <a href="tel:+917589466659" class="topbar-phone">📞 7589466659</a>
+      <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language">EN</button>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <nav class="nav container">
+    <div class="brand">
+      <span class="brand-mark">ॐ</span>
+      <div class="brand-text">
+        <strong data-i18n="brand.name">पंडित आर.के. शर्मा</strong>
+        <small data-i18n="brand.sub">ज्योतिष केंद्र, सिरसा</small>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="मेन्यू खोलें">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-i18n="nav.about">पंडित जी के बारे में</a></li>
+      <li><a href="#services" data-i18n="nav.services">सेवाएं</a></li>
+      <li><a href="#why" data-i18n="nav.why">विशेषताएं</a></li>
+      <li><a href="#testimonials" data-i18n="nav.testimonials">अनुभव</a></li>
+      <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">सम्पर्क करें</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">श्री खाटू श्याम मंदिर के आशीर्वाद से</p>
+        <h1 data-i18n="hero.title">जीवन की हर उलझन का <span>ज्योतिषीय समाधान</span></h1>
+        <p class="hero-sub" data-i18n="hero.sub">पंडित आर.के. शर्मा जी — 20+ वर्षों का अनुभव, हजारों संतुष्ट परिवार। कुंडली, वास्तु, वैवाहिक समस्या, करियर, वशीकरण एवं समस्त ज्योतिष सेवाओं के लिए भरोसेमंद नाम।</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.btnBook">निःशुल्क परामर्श बुक करें</a>
+          <a href="tel:+917589466659" class="btn btn-ghost" data-i18n="hero.btnCall">📞 अभी कॉल करें</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>20+</strong><span data-i18n="hero.stat1">वर्षों का अनुभव</span></div>
+          <div><strong>5000+</strong><span data-i18n="hero.stat2">संतुष्ट परिवार</span></div>
+          <div><strong>10+</strong><span data-i18n="hero.stat3">ज्योतिष सेवाएं</span></div>
+        </div>
+      </div>
+
+      <div class="hero-chakra" aria-hidden="true">
+        <div class="chakra-ring">
+          <svg viewBox="0 0 400 400" class="chakra-svg">
+            <circle cx="200" cy="200" r="188" class="chakra-outer"/>
+            <circle cx="200" cy="200" r="150" class="chakra-mid"/>
+            <circle cx="200" cy="200" r="60" class="chakra-inner"/>
+            <g class="chakra-spokes">
+              <!-- 12 house divider lines -->
+              <g id="spokes"></g>
+              <!-- 12 zodiac glyphs placed by JS around the ring -->
+              <g id="glyphs" class="chakra-glyphs"></g>
+            </g>
+          </svg>
+          <div class="chakra-om">ॐ</div>
+        </div>
+        <p class="chakra-caption" data-i18n="hero.chakraCaption">आपकी कुंडली, आपका भविष्य</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="about-portrait" aria-hidden="true">
+        <div class="portrait-frame">
+          <div class="portrait-om">ॐ</div>
+        </div>
+        <div class="portrait-tag" data-i18n="brand.name">पंडित आर.के. शर्मा</div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow" data-i18n="about.eyebrow">पंडित जी के बारे में</p>
+        <h2 data-i18n="about.title">अनुभव और विश्वास की 20+ वर्षों की यात्रा</h2>
+        <p data-i18n="about.body">पंडित आर.के. शर्मा जी सिरसा, हरियाणा में खाटू श्याम मंदिर के पास स्थित अपने ज्योतिष केंद्र में विगत 20 से अधिक वर्षों से लोगों की जीवन की समस्याओं का वैदिक ज्योतिष द्वारा समाधान कर रहे हैं। जन्म कुंडली विश्लेषण से लेकर वास्तु दोष निवारण तक, प्रत्येक परामर्श गुप्त एवं व्यक्तिगत रूप से दिया जाता है।</p>
+        <ul class="about-points">
+          <li data-i18n="about.point1">वैदिक ज्योतिष एवं शास्त्रों का गहन ज्ञान</li>
+          <li data-i18n="about.point2">पूर्ण गोपनीयता के साथ व्यक्तिगत परामर्श</li>
+          <li data-i18n="about.point3">फोन एवं व्यक्तिगत मुलाकात — दोनों सुविधाएं उपलब्ध</li>
+          <li data-i18n="about.point4">निश्चित एवं कारगर उपाय, बिना किसी झूठे वादे के</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="container">
+      <p class="eyebrow center" data-i18n="services.eyebrow">हमारी सेवाएं</p>
+      <h2 class="center" data-i18n="services.title">हर प्रकार की ज्योतिष सेवाएं, एक ही स्थान पर</h2>
+      <div class="services-grid">
+
+        <article class="service-card">
+          <div class="service-icon">🪐</div>
+          <h3 data-i18n="service1.title">कुंडली / जन्म पत्रिका विश्लेषण</h3>
+          <p data-i18n="service1.desc">जन्म कुंडली का सूक्ष्म अध्ययन कर जीवन के हर पहलू पर सटीक मार्गदर्शन।</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🏠</div>
+          <h3 data-i18n="service2.title">वास्तु शास्त्र परामर्श</h3>
+          <p data-i18n="service2.desc">घर, दुकान एवं कार्यालय के वास्तु दोष की पहचान कर सरल उपाय।</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🔢</div>
+          <h3 data-i18n="service3.title">अंक ज्योतिष (न्यूमरोलॉजी)</h3>
+          <p data-i18n="service3.desc">जन्मतिथि व नाम के अंकों से भाग्य एवं व्यक्तित्व का विश्लेषण।</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">✋</div>
+          <h3 data-i18n="service4.title">हस्तरेखा विज्ञान</h3>
+          <p data-i18n="service4.desc">हाथ की रेखाओं द्वारा भूत, वर्तमान और भविष्य का सटीक आकलन।</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">💞</div>
+          <h3 data-i18n="service5.title">प्रेम एवं वैवाहिक समस्या समाधान</h3>
+          <p data-i18n="service5.desc">प्रेम विवाह, वैवाहिक कलह एवं रिश्तों की अड़चनों का स्थायी समाधान।</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">💼</div>
+          <h3 data-i18n="service6.title">करियर एवं व्यापार परामर्श</h3>
+          <p data-i18n="service6.desc">नौकरी, व्यापार में उन्नति एवं सही निर्णय हेतु ज्योतिषीय मार्गदर्शन।</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🕉️</div>
+          <h3 data-i18n="service7.title">वशीकरण विद्या</h3>
+          <p data-i18n="service7.desc">वैदिक विधि द्वारा वशीकरण के सुरक्षित एवं प्रभावी उपाय।</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🔥</div>
+          <h3 data-i18n="service8.title">काला जादू / तंत्र बाधा निवारण</h3>
+          <p data-i18n="service8.desc">नकारात्मक शक्तियों एवं तंत्र बाधा से पूर्ण मुक्ति के अनुभवी उपाय।</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🙏</div>
+          <h3 data-i18n="service9.title">ग्रह दोष निवारण एवं पूजा</h3>
+          <p data-i18n="service9.desc">शनि, राहु-केतु व अन्य ग्रह दोषों की शांति हेतु विधिवत पूजन।</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why" class="why">
+    <div class="container why-grid">
+      <div class="why-item">
+        <div class="why-icon">🛡️</div>
+        <h3 data-i18n="why1.title">पूर्ण गोपनीयता</h3>
+        <p data-i18n="why1.desc">आपकी समस्या और परामर्श सदैव गुप्त रखे जाते हैं।</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">⏳</div>
+        <h3 data-i18n="why2.title">20+ वर्षों का अनुभव</h3>
+        <p data-i18n="why2.desc">वैदिक ज्योतिष में गहन अध्ययन एवं व्यावहारिक अनुभव।</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🎯</div>
+        <h3 data-i18n="why3.title">सटीक एवं कारगर उपाय</h3>
+        <p data-i18n="why3.desc">हर समस्या के लिए व्यावहारिक और परिणामदायक समाधान।</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">📞</div>
+        <h3 data-i18n="why4.title">फोन पर परामर्श उपलब्ध</h3>
+        <p data-i18n="why4.desc">दूर बैठे भी पंडित जी से सीधे बात कर समाधान पाएं।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <p class="eyebrow center" data-i18n="testi.eyebrow">हमारे यजमानों के अनुभव</p>
+      <h2 class="center" data-i18n="testi.title">श्रद्धालुओं की राय</h2>
+      <div class="testi-grid">
+        <blockquote class="testi-card">
+          <p data-i18n="testi1.quote">पंडित जी के बताए उपाय से मेरी वैवाहिक समस्या का समाधान हुआ। बहुत बहुत धन्यवाद।</p>
+          <cite data-i18n="testi1.cite">— सुनीता देवी, सिरसा</cite>
+        </blockquote>
+        <blockquote class="testi-card">
+          <p data-i18n="testi2.quote">कुंडली दिखाने के बाद करियर को लेकर जो सलाह मिली, वह बिल्कुल सही साबित हुई।</p>
+          <cite data-i18n="testi2.cite">— विकास कुमार, हिसार</cite>
+        </blockquote>
+        <blockquote class="testi-card">
+          <p data-i18n="testi3.quote">घर के वास्तु दोष के लिए पंडित जी से परामर्श लिया, परिणाम सच में अद्भुत रहे।</p>
+          <cite data-i18n="testi3.cite">— राजेश शर्मा, फतेहाबाद</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="eyebrow" data-i18n="contact.eyebrow">सम्पर्क करें</p>
+        <h2 data-i18n="contact.title">परामर्श हेतु आज ही संपर्क करें</h2>
+        <p class="contact-lead" data-i18n="contact.lead">अपनी समस्या बताएं या नीचे दिए गए फॉर्म से संदेश भेजें, पंडित जी शीघ्र ही आपसे संपर्क करेंगे।</p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-ic">📞</span>
+            <div><strong data-i18n="contact.phoneLabel">फोन नंबर</strong><a href="tel:+917589466659">7589466659</a></div>
+          </li>
+          <li>
+            <span class="contact-ic">📍</span>
+            <div><strong data-i18n="contact.addressLabel">पता</strong><span data-i18n="contact.addressValue">सिरसा, हरियाणा - 125055, खाटू श्याम मंदिर के पास</span></div>
+          </li>
+          <li>
+            <span class="contact-ic">🕐</span>
+            <div><strong data-i18n="contact.timeLabel">समय</strong><span data-i18n="contact.timeValue">प्रातः 8:00 बजे से रात्रि 8:00 बजे तक (सातों दिन)</span></div>
+          </li>
+        </ul>
+
+        <a class="btn btn-whatsapp" href="https://wa.me/917589466659" target="_blank" rel="noopener" data-i18n="contact.whatsapp">🟢 WhatsApp पर संदेश भेजें</a>
+
+        <div class="map-embed">
+          <iframe
+            title="Khatu Shyam Mandir, Sirsa location"
+            src="https://maps.google.com/maps?q=Khatu%20Shyam%20Mandir%20Sirsa%20Haryana%20125055&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <h3 data-i18n="form.title">निःशुल्क परामर्श हेतु फॉर्म भरें</h3>
+
+        <label for="name" data-i18n="form.nameLabel">आपका नाम</label>
+        <input type="text" id="name" name="name" data-i18n-placeholder="form.namePh" placeholder="पूरा नाम लिखें" required>
+
+        <label for="phone" data-i18n="form.phoneLabel">फोन नंबर</label>
+        <input type="tel" id="phone" name="phone" data-i18n-placeholder="form.phonePh" placeholder="10 अंकों का मोबाइल नंबर" required>
+
+        <label for="service" data-i18n="form.serviceLabel">सेवा चुनें</label>
+        <select id="service" name="service">
+          <option data-i18n="service1.title">कुंडली / जन्म पत्रिका विश्लेषण</option>
+          <option data-i18n="service2.title">वास्तु शास्त्र परामर्श</option>
+          <option data-i18n="service3.title">अंक ज्योतिष (न्यूमरोलॉजी)</option>
+          <option data-i18n="service4.title">हस्तरेखा विज्ञान</option>
+          <option data-i18n="service5.title">प्रेम एवं वैवाहिक समस्या समाधान</option>
+          <option data-i18n="service6.title">करियर एवं व्यापार परामर्श</option>
+          <option data-i18n="service7.title">वशीकरण विद्या</option>
+          <option data-i18n="service8.title">काला जादू / तंत्र बाधा निवारण</option>
+          <option data-i18n="service9.title">ग्रह दोष निवारण एवं पूजा</option>
+          <option data-i18n="form.other">अन्य</option>
+        </select>
+
+        <label for="message" data-i18n="form.messageLabel">अपनी समस्या लिखें</label>
+        <textarea id="message" name="message" rows="4" data-i18n-placeholder="form.messagePh" placeholder="अपनी समस्या संक्षेप में लिखें..."></textarea>
+
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="form.submit">संदेश भेजें</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand">
+        <span class="brand-mark small">ॐ</span>
+        <strong data-i18n="brand.nameFull">पंडित आर.के. शर्मा ज्योतिष केंद्र</strong>
+      </div>
+      <p data-i18n="footer.address">सिरसा, हरियाणा - 125055 · खाटू श्याम मंदिर के पास</p>
+    </div>
+    <div>
+      <h4 data-i18n="footer.quicklinks">त्वरित लिंक</h4>
+      <ul>
+        <li><a href="#about" data-i18n="nav.about">पंडित जी के बारे में</a></li>
+        <li><a href="#services" data-i18n="nav.services">सेवाएं</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">सम्पर्क करें</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.contact">सम्पर्क</h4>
+      <p>📞 <a href="tel:+917589466659">7589466659</a></p>
+      <p>📍 <span data-i18n="footer.addressShort">सिरसा, हरियाणा - 125055</span></p>
+    </div>
+  </div>
+  <p class="footer-copy" data-i18n="footer.copyright">© 2026 पंडित आर.के. शर्मा ज्योतिष केंद्र। सर्वाधिकार सुरक्षित।</p>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
