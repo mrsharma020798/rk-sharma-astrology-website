@@ -1,55 +1,62 @@
-# पंडित आर.के. शर्मा ज्योतिष केंद्र — Website
+# call-bind-apply-helpers <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
 
-Pandit R.K. Sharma (Sirsa, Haryana — near Khatu Shyam Mandir) ke liye complete astrology website.
-Phone: **7589466659**
+[![github actions][actions-image]][actions-url]
+[![coverage][codecov-image]][codecov-url]
+[![dependency status][deps-svg]][deps-url]
+[![dev dependency status][dev-deps-svg]][dev-deps-url]
+[![License][license-image]][license-url]
+[![Downloads][downloads-image]][downloads-url]
 
-## Structure
+[![npm badge][npm-badge-png]][package-url]
+
+Helper functions around Function call/apply/bind, for use in `call-bind`.
+
+The only packages that should likely ever use this package directly are `call-bind` and `get-intrinsic`.
+Please use `call-bind` unless you have a very good reason not to.
+
+## Getting started
+
+```sh
+npm install --save call-bind-apply-helpers
 ```
-astrology-website/
-├── frontend/          → HTML, CSS, JS (site design)
-│   ├── index.html
-│   ├── css/style.css
-│   └── js/script.js
-├── backend/           → Node.js + Express server
-│   ├── server.js
-│   ├── package.json
-│   └── data/contacts.json   (contact form submissions save yahan hoti hain)
-└── README.md
+
+## Usage/Examples
+
+```js
+const assert = require('assert');
+const callBindBasic = require('call-bind-apply-helpers');
+
+function f(a, b) {
+	assert.equal(this, 1);
+	assert.equal(a, 2);
+	assert.equal(b, 3);
+	assert.equal(arguments.length, 2);
+}
+
+const fBound = callBindBasic([f, 1]);
+
+delete Function.prototype.call;
+delete Function.prototype.bind;
+
+fBound(2, 3);
 ```
 
-## Kaise chalayein (Run karein)
+## Tests
 
-1. Node.js installed hona chahiye (v18+ recommended) — https://nodejs.org
-2. Terminal kholein aur backend folder mein jaayein:
-   ```bash
-   cd astrology-website/backend
-   npm install
-   npm start
-   ```
-3. Browser mein kholein: **http://localhost:3000**
+Clone the repo, `npm install`, and run `npm test`
 
-Backend hi frontend files serve karta hai, isliye ek hi server chalane se poori website chal jaayegi.
-
-## Features
-- Poori tarah Hindi mein, mobile-friendly, responsive design
-- Hero section mein animated "kundli chakra" (zodiac wheel)
-- Saari services list (Kundli, Vastu, Numerology, Palmistry, Vivah/Prem samasya, Career, Vashikaran, Kaala jaadu nivaran, Grah dosh puja)
-- Contact form → backend API (`POST /api/contact`) mein save hota hai `backend/data/contacts.json`
-- WhatsApp direct message button
-- Google Maps embed (Khatu Shyam Mandir, Sirsa ke location par)
-- Click-to-call phone number
-
-## Enquiries dekhna (Admin)
-Server chalne ke baad browser mein kholein: `http://localhost:3000/api/contacts` — isse abhi tak aayi saari enquiries JSON format mein dikhengi.
-> Production mein isko password-protect karna zaroori hai — abhi yeh open hai.
-
-## Email / WhatsApp notification jodna (optional)
-`backend/server.js` file mein `saveContact()` function ke andar comment kiya hua nodemailer example hai — usse uncomment karke apni SMTP details daalein taaki har enquiry par email mil sake.
-
-## Customize karna
-- Text/content: `frontend/index.html` mein seedha edit karein
-- Colors/fonts: `frontend/css/style.css` ke top par `:root` variables mein
-- Real photo: `.portrait-frame` div ki jagah `<img>` tag daal sakte hain
-
-## Hosting (live karne ke liye)
-Free/paid hosting options: Render, Railway, Vercel (backend ke liye Node hosting chahiye) + domain name khareed kar jod sakte hain.
+[package-url]: https://npmjs.org/package/call-bind-apply-helpers
+[npm-version-svg]: https://versionbadg.es/ljharb/call-bind-apply-helpers.svg
+[deps-svg]: https://david-dm.org/ljharb/call-bind-apply-helpers.svg
+[deps-url]: https://david-dm.org/ljharb/call-bind-apply-helpers
+[dev-deps-svg]: https://david-dm.org/ljharb/call-bind-apply-helpers/dev-status.svg
+[dev-deps-url]: https://david-dm.org/ljharb/call-bind-apply-helpers#info=devDependencies
+[npm-badge-png]: https://nodei.co/npm/call-bind-apply-helpers.png?downloads=true&stars=true
+[license-image]: https://img.shields.io/npm/l/call-bind-apply-helpers.svg
+[license-url]: LICENSE
+[downloads-image]: https://img.shields.io/npm/dm/call-bind-apply-helpers.svg
+[downloads-url]: https://npm-stat.com/charts.html?package=call-bind-apply-helpers
+[codecov-image]: https://codecov.io/gh/ljharb/call-bind-apply-helpers/branch/main/graphs/badge.svg
+[codecov-url]: https://app.codecov.io/gh/ljharb/call-bind-apply-helpers/
+[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/ljharb/call-bind-apply-helpers
+[actions-url]: https://github.com/ljharb/call-bind-apply-helpers/actions
